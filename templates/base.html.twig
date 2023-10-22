@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <title>Ferme laitiere |{% block title %} base {% endblock %} </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style2.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    </style>
+    {% block style %}{% endblock %}
+    <body>
+
+    {% include "layout/header.html.twig" %}
+   
+    {% include "layout/footer.html.twig" %}
+    
+
+    <script type="text" src="{{ asset('assets/js/base.js') }}"></script>
+    {% block script %}{% endblock %}
+    {% block body %}{% endblock %}
+    </body>
+
+</html>
